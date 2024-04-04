@@ -1,0 +1,47 @@
+nav {
+  display: inline-block;
+  color: aliceblue;
+}
+.navbar {
+}
+a {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-top: 30%;
+  margin-left: 2px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  color: rgb(0, 0, 0);
+}
+.banner {
+}
+.info {
+  background-color: yellow;
+  width: 415px;
+  height: 80px;
+  border: 1px solid black;
+}
+p {
+  display: inline-block;
+  font-size: 13px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 50px 17px;
+}
+h4 {
+  text-align: center;
+}
+
+.service button {
+  display: inline-block;
+  background-color: yellow;
+  width: 150px; /* Adjusted width for better readability */
+  height: 160px; /* Adjusted height for better readability */
+  border-radius: 10px;
+  margin: 15px; /* Added margin for spacing between buttons */
+  margin-left: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  padding: 20px 10px;
+}

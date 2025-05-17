@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAMAM Global Consult Ltd.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ffcc25",
+              secondary: "#ffd95a",
+              textlight: "#edbe00",
+              dark: "#000000",
+            },
+            fontSize: {
+              hero: "clamp(2.5rem, 5vw, 4rem)",
+              subhero: "clamp(1.25rem, 3vw, 2rem)",
+              "body-lg": "clamp(1rem, 2vw, 1.25rem)",
+            },
+          },
+        },
+      };
+    </script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body class="font-sans bg-white text-dark">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md px-6 py-4 sticky top-0 z-50">
+      <div class="flex items-center justify-between max-w-7xl mx-auto">
+        <a href="#">
+          <img src="picture/logo.png" alt="logo" class="h-16 w-auto" />
+        </a>
+        <div class="md:hidden text-3xl cursor-pointer" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+        <ul
+          class="hidden md:flex space-x-10 text-lg text-dark font-medium"
+          id="nav-links"
+        >
+          <li><a href="#" class="hover:text-primary">Home</a></li>
+          <li><a href="#services" class="hover:text-primary">Services</a></li>
+          <li><a href="#about-me" class="hover:text-primary">About Us</a></li>
+          <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+          <li><a href="#" class="hover:text-primary">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-secondary/10 py-16 md:py-28">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center"
+      >
+        <div class="hidden md:block">
+          <img
+            src="picture/header.png"
+            alt="header"
+            class="w-full h-auto rounded-xl shadow-lg"
+          />
+        </div>
+        <div>
+          <h2 class="text-subhero font-semibold text-primary mb-3">
+            WELCOME TO TAMAM GLOBAL CONSULT Ltd.
+          </h2>
+          <h1 class="text-hero font-bold leading-tight mb-6">
+            Unlock Endless Opportunities<br />
+            <span class="text-primary">For Study & Travel</span><br />
+            <span class="text-textlight">With Our Expert Guidance</span>
+          </h1>
+          <p class="text-body-lg text-dark/70 mb-8">
+            From hassle-free visa applications to studying abroad,
+            budget-friendly flights, and customized travel experiences, we
+            provide everything you need for a seamless journey. Let’s turn your
+            dreams into reality with our expert consultancy and tailored
+            solutions.
+          </p>
+          <div class="mb-8">
+            <button
+              class="bg-primary text-dark text-lg px-8 py-4 rounded-full hover:bg-secondary transition"
+            >
+              Learn More
+            </button>
+          </div>
+          <ul class="flex space-x-6 text-3xl text-primary">
+            <li>
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300"
+      id="services"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h6 class="text-yellow-500 text-lg font-semibold mb-2">
+            WHAT WE OFFER
+          </h6>
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4"
+          >
+            Affordable Services
+          </h2>
+          <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
+            A Private Limited is the most popular type of partnership Malta. The
+            limited liability is, in fact, the only type of company allowed by
+            Companies.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <a
+            href="flightticket.html"
+            class="block bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition"
+          >
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="mdi mdi-cached"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
+            >
+              Book Flight Ticket
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              We use a customized application specifically designed for testing.
+            </p>
+          </a>
+
+          <a
+            href="visaapplication.html"
+            class="block bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition"
+          >
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="mdi mdi-comment-plus-outline"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
+            >
+              Visa Application
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              We use a customized application specifically designed for testing.
+            </p>
+          </a>
+
+          <a
+            href="admission.html"
+            class="block bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition"
+          >
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="mdi mdi-layers"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
+            >
+              University Admission
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              We use a customized application specifically designed for testing.
+            </p>
+          </a>
+
+          <a
+            href="architectural-consultancy.html"
+            class="block bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition"
+          >
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="mdi mdi-inbox-arrow-up"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
+            >
+              Architectural Consultancy
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              We use a customized application specifically designed for testing.
+            </p>
+          </a>
+
+          <a
+            href="travel-guide.html"
+            class="block bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition"
+          >
+            <div class="text-yellow-500 text-4xl mb-4">
+              <i class="mdi mdi-chart-line"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
+            >
+              Travel Guide
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              We use a customized application specifically designed for testing.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about-me"
+      class="py-20 bg-[#fff8db] dark:bg-gray-900 transition-colors duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-12"
+        >
+          <!-- Image -->
+          <div class="md:w-1/2">
+            <img
+              src="picture/download.png"
+              alt="TAMAM Global Consult"
+              class="w-full rounded-xl shadow-md"
+            />
+          </div>
+
+          <!-- Text Content with Alpine Toggle -->
+          <div class="md:w-1/2" x-data="{ open: false }">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-black dark:text-white mb-6"
+            >
+              TAMAM GLOBAL CONSULT
+            </h2>
+            <p class="text-black dark:text-gray-300 mb-4 leading-relaxed">
+              TAMAM GLOBAL CONSULT is a leading educational consultancy firm
+              dedicated to guiding students through the journey of pursuing
+              higher education abroad.
+            </p>
+            <p class="text-black dark:text-gray-300 mb-4 leading-relaxed">
+              With a strong focus on excellence and an in-depth understanding of
+              international education, we provide comprehensive support from
+              university selection to application.
+            </p>
+
+            <div x-show="open" x-transition>
+              <p class="text-black dark:text-gray-300 mb-4 leading-relaxed">
+                Our key services include assisting students in choosing the
+                right universities and programs based on their academic
+                background and career aspirations. Through our extensive network
+                of global university partners, we ensure students have a wide
+                range of options, considering factors such as rankings,
+                accreditation, and facilities.
+              </p>
+              <p class="text-black dark:text-gray-300 mb-4 leading-relaxed">
+                We are proud to offer a proposal that secures admissions and
+                provides
+                <strong class="text-yellow-500">up to 50% scholarships</strong>
+                for prospective students. Through government-sponsored
+                scholarship negotiations, we help students access substantial
+                financial aid.
+              </p>
+            </div>
+
+            <button
+              @click="open = !open"
+              class="bg-yellow-400 text-black font-semibold py-2 px-5 rounded hover:bg-yellow-500 transition"
+              x-text="open ? 'Show Less' : 'Read More'"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section
+      class="bg-gray-50 dark:bg-gray-900 py-12 px-4 transition-colors duration-300"
+    >
+      <div class="max-w-7xl mx-auto">
+        <h2
+          class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-10"
+        >
+          Our Location
+        </h2>
+        <div class="flex justify-center mb-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.5861969885855!2d9.353022108864531!3d11.710681918820358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11abf022e136748b%3A0xbb9f7136df077c50!2sHasinah%20Confectionery%20and%20Restaurant!5e1!3m2!1sen!2s!4v1713838112824!5m2!1sen!2s"
+            class="w-full md:w-[80%] h-[500px] rounded-lg shadow-lg border-4 border-yellow-400"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION DETAILS -->
+    <section
+      class="bg-white dark:bg-gray-800 py-12 px-4 transition-colors duration-300"
+    >
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+        <div
+          class="p-6 border rounded-lg shadow hover:shadow-lg transition dark:border-gray-700 dark:bg-gray-700"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+            Main Office
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Office 1, Dutse Local Government, Jigawa State, Nigeria
+          </p>
+          <p>
+            <a
+              class="text-yellow-500 hover:underline"
+              href="mailto:hello@tokomoo.com"
+              >hello@tokomoo.com</a
+            >
+          </p>
+        </div>
+        <div
+          class="p-6 border rounded-lg shadow hover:shadow-lg transition dark:border-gray-700 dark:bg-gray-700"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+            Abuja Office
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Plot 123, Jabi District, Abuja, Nigeria
+          </p>
+          <p>
+            <a
+              class="text-yellow-500 hover:underline"
+              href="mailto:abuja@tamamglobal.com"
+              >abuja@tamamglobal.com</a
+            >
+          </p>
+        </div>
+        <div
+          class="p-6 border rounded-lg shadow hover:shadow-lg transition dark:border-gray-700 dark:bg-gray-700"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+            Kano Office
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Plot 45, Nassarawa Road, Kano State, Nigeria
+          </p>
+          <p>
+            <a
+              class="text-yellow-500 hover:underline"
+              href="mailto:kano@tamamglobal.com"
+              >kano@tamamglobal.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="bg-white py-16 Transition-colors">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h2 class="text-5xl font-extrabold text-blue-800 mb-4">
+            Tamam Global Blog
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Insights, student stories, and achievements from Tamam Global
+            Consult — your trusted partner in studying abroad.
+          </p>
+        </div>
+
+        <!-- Featured Post -->
+        <div class="mb-16">
+          <div
+            class="grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="https://source.unsplash.com/800x500/?university,graduation"
+              alt="Featured"
+              class="w-full h-full object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-3xl font-bold text-blue-700 mb-4">
+                100+ Students Admitted to Top Universities in 2024
+              </h3>
+              <p class="text-gray-700 mb-6">
+                Tamam Global Consult helped over 100 students secure placements
+                in world-class universities across the UK, US, Canada, and
+                Europe. Learn how we do it.
+              </p>
+              <a href="#" class="text-blue-600 font-semibold hover:underline"
+                >Read the Full Story →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Cards Grid -->
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card 1: Achievement -->
+          <div
+            class="bg-white transition-colors rounded-lg shadow-md hover:shadow-xl transition"
+          >
+            <img
+              src="https://source.unsplash.com/400x250/?certificate,education"
+              alt="Achievement"
+              class="rounded-t-lg w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-blue-700 mb-2">
+                Recognized as Top Education Agency 2024
+              </h4>
+              <p class="text-gray-600 text-sm mb-4">
+                We’re proud to be awarded for our excellence in international
+                education consultancy services.
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 text-sm font-semibold hover:underline"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 2: Blog Post -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition">
+            <img
+              src="https://source.unsplash.com/400x250/?study,abroad"
+              alt="Tips"
+              class="rounded-t-lg w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-blue-700 mb-2">
+                Top 5 Scholarships for International Students
+              </h4>
+              <p class="text-gray-600 text-sm mb-4">
+                Discover major funding opportunities for studying abroad —
+                including requirements and deadlines.
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 text-sm font-semibold hover:underline"
+                >Read More →</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 3: Student Story -->
+          <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition">
+            <img
+              src="https://source.unsplash.com/400x250/?student,success"
+              alt="Student Success"
+              class="rounded-t-lg w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-blue-700 mb-2">
+                From Lagos to London: Adebayo's Journey
+              </h4>
+              <p class="text-gray-600 text-sm mb-4">
+                Read how Adebayo secured a full scholarship to study in the UK
+                through our support and guidance.
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 text-sm font-semibold hover:underline"
+                >Meet the Students →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ WITH ACCORDION -->
+    <section
+      class="bg-gray-50 dark:bg-gray-900 py-12 px-4 transition-colors duration-300"
+    >
+      <div class="max-w-5xl mx-auto">
+        <h2
+          class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8"
+        >
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-4" x-data="{ selected: null }">
+          <template
+            x-for="(faq, index) in [
+            {q: 'What Is Meant By a Step-by-Step Process?', a: 'Lorem ipsum dolor sit amet...'},
+            {q: 'Can I cancel my order?', a: 'Lorem ipsum dolor sit amet...'},
+            {q: 'Are There Offices in Other Areas?', a: 'Lorem ipsum dolor sit amet...'},
+            {q: 'Can I rent directly from the factory?', a: 'Lorem ipsum dolor sit amet...'}
+          ]"
+            :key="index"
+          >
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-4">
+              <button
+                @click="selected === index ? selected = null : selected = index"
+                class="flex justify-between w-full text-left text-xl font-semibold text-gray-800 dark:text-white"
+              >
+                <span x-text="faq.q"></span>
+                <svg
+                  :class="{'rotate-180': selected === index}"
+                  class="w-5 h-5 transform transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                x-show="selected === index"
+                x-transition
+                class="mt-2 text-gray-600 dark:text-gray-300"
+                x-text="faq.a"
+              ></div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section
+      id="contact"
+      class="bg-white dark:bg-gray-800 py-16 px-4 transition-colors duration-300"
+    >
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+        <!-- Info -->
+        <div>
+          <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+            Let's Connect
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            Looking for help? Fill the form and start a new adventure.
+          </p>
+          <div class="space-y-6 text-gray-700 dark:text-gray-300">
+            <div>
+              <h6 class="font-semibold text-gray-700 dark:text-white">
+                Address:
+              </h6>
+              <p>Office 1, Dutse Local Government, Jigawa State, Nigeria</p>
+            </div>
+            <div>
+              <h6 class="font-semibold text-gray-700 dark:text-white">
+                Phone:
+              </h6>
+              <p>(+642) 245 356 432<br />(+420) 336 476 328</p>
+            </div>
+            <div>
+              <h6 class="font-semibold text-gray-700 dark:text-white">
+                Support:
+              </h6>
+              <p>hellosuppot@gmail.com<br />help@.com</p>
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg shadow">
+          <h4 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
+            Let's Talk
+          </h4>
+          <form method="post" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                class="w-full p-3 border rounded focus:ring-2 focus:ring-yellow-400 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                class="w-full p-3 border rounded focus:ring-2 focus:ring-yellow-400 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+              />
+            </div>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Your subject"
+              class="w-full p-3 border rounded focus:ring-2 focus:ring-yellow-400 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+            />
+            <textarea
+              name="comments"
+              rows="4"
+              placeholder="Your message..."
+              class="w-full p-3 border rounded focus:ring-2 focus:ring-yellow-400 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-3 rounded transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+
+    <!-- Footer -->
+    <!-- Start Footer -->
+    <footer class="bg-black text-white pt-16 pb-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Logo and Description -->
+          <div>
+            <a href="index.html" class="inline-block mb-4">
+              <img src="picture/logo.png" alt="Logo" class="h-8" />
+            </a>
+            <p class="text-gray-400 text-sm">
+              A Private Limited is the most popular type of partnership Malta.
+              The limited liability is, in fact, the only type of company
+              allowed by Companies.
+            </p>
+            <div class="flex space-x-4 mt-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="mdi mdi-facebook text-xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="mdi mdi-instagram text-xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="mdi mdi-twitter text-xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="mdi mdi-linkedin text-xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="mdi mdi-pinterest text-xl"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Company Links -->
+          <div>
+            <h5 class="text-white text-lg font-semibold mb-4">Company</h5>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white"
+                  ><i class="mdi mdi-arrow-right mr-2"></i>Security &amp;
+                  Privacy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white"
+                  ><i class="mdi mdi-arrow-right mr-2"></i>Support</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white"
+                  ><i class="mdi mdi-arrow-right mr-2"></i>Terms &amp;
+                  Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white"
+                  ><i class="mdi mdi-arrow-right mr-2"></i>Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white"
+                  ><i class="mdi mdi-arrow-right mr-2"></i>About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- LinkedIn Section -->
+          <div>
+            <h5 class="text-white text-lg font-semibold mb-4">LinkedIn</h5>
+            <p class="text-sm text-gray-400 mb-2">
+              The full monty spiffing good time.
+            </p>
+            <a href="#" class="text-sm text-primary hover:underline"
+              >@Harold.com</a
+            >
+            <div class="flex items-center mt-4">
+              <i class="mdi mdi-linkedin text-3xl text-white"></i>
+              <a href="#" class="ml-3 text-sm text-gray-400 hover:text-white"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+
+          <!-- Newsletter Signup -->
+          <div>
+            <h5 class="text-white text-lg font-semibold mb-4">Sign Up</h5>
+            <p class="text-sm text-gray-400 mb-4">
+              Follow our newsletter to stay updated about agency.
+            </p>
+            <div class="flex">
+              <input
+                type="text"
+                placeholder="Subscribe"
+                class="w-full px-4 py-3 rounded-l-md text-black focus:outline-none"
+              />
+              <a
+                href="#"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-r-md"
+                >Go</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div
+        class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm"
+      >
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        GUMEL-INNOVATION
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const navLinks = document.getElementById("nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Read More Toggle Script -->
+    <script>
+      function toggleText() {
+        const moreText = document.getElementById("more-about-text");
+        moreText.classList.toggle("hidden");
+      }
+    </script>
+
+    <!-- Optional: JS for mobile menu toggle -->
+    <script>
+      document.getElementById("menu-btn").addEventListener("click", () => {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("hidden");
+        navLinks.classList.toggle("flex");
+        navLinks.classList.toggle("flex-col");
+        navLinks.classList.toggle("absolute");
+        navLinks.classList.toggle("top-20");
+        navLinks.classList.toggle("left-0");
+        navLinks.classList.toggle("w-full");
+        navLinks.classList.toggle("bg-white");
+        navLinks.classList.toggle("px-6");
+        navLinks.classList.toggle("py-4");
+        navLinks.classList.toggle("space-y-4");
+      });
+    </script>
+  </body>
+</html>
